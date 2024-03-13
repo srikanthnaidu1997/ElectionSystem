@@ -63,7 +63,7 @@ public class ElectionCounting {
                     if (parts.length >= 2) {
                         currentUnitName = parts[0];
                         RegionsSection unit = new RegionsSection(currentUnitName);
-                        if (parts[1].length() > 4) continue;
+                        //if (parts[1].length() > 4) continue;
                         for (char c : parts[1].toCharArray()) {
                             Participants Participants = ParticipantsMap.get(c);
                             if (Participants != null) unit.addContestant(Participants);
